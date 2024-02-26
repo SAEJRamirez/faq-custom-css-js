@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1a1a1a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: 40px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.accordion {
+    max-width: 530px;
+    width: 100%;
+    background: #FFF;
+    margin: 0 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.accordion .accordion-content {
+    margin: 10px 0;
+    background: #FFF7F0;
+    border-radius: 4px;
+    border: 1px solid #FFD6B3;
+    overflow: hidden;
+}
+
+.accordion .accordion-content:nth-child(2) {
+    background: #F0FAFF;
+    border-color: #CCEEFF;
+}
+
+.accordion .accordion-content:nth-child(3) {
+    background: #FFF0F3;
+    border-color: #FFCCD6;
+}
+
+.accordion .accordion-content:nth-child(4) {
+    background: #F0F0FF;
+    border-color: #CCCCFF;
+}
+
+.accordion-content.open {
+    padding-bottom: 10px;
+}
+
+.accordion-content header {
+    display: flex;
+    min-height: 50px;
+    padding: 0 15px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.accordion-content.open header {
+    min-height: 35px;
+}
+
+.accordion-content header title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.accordion-content header i {
+    font-size: 15px;
+    color: #333333;
+}
+
+.accordion-content .description {
+    height: 0;
+    padding: 0 15px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333333;
+    transition: all 0.2s linear ;
+}
